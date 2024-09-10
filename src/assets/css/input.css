@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text: #9199a6;
+    --color-background: #1d232a;
+    --color-primary: #00cdb8;
+    --color-primary-gradient: #d43690, #cd48a6, #c358b9, #b667ca, #a675d9,
+      #8985ea, #6493f4, #2fa0f9, #00b0f6, #00bce8, #00c6d2, #00cdb8;
+    --color-base: #191e24;
+    --color-base2: #6d6d6d;
+  }
+  :root[data-theme="light"] {
+    --color-text: #1f2937;
+    --color-background: #fff;
+    --color-primary: #ffbe00;
+    --color-primary-gradient: #d43d36, #d95d3a, #dd7844, #e09152, #e3a866,
+      #e7b169, #ebba6c, #eec36f, #f3c25d, #f7c148, #fbbf30, #ffbe00;
+    --color-base: #f2f2f2;
+    --color-base2: #e9e5e5;
+  }
+
+  .m-nav-link li a,
+  .m-nav-link li a.active {
+    @apply dark:hover:text-base-100;
+  }
+
+  #home .container .left,
+  #home .container .right {
+    @apply w-full md:w-[50%];
+  }
+
+  section .container {
+    @apply w-[90%] lg:w-[80%] mx-auto;
+  }
+
+  main .about-wrapper .education ul::before {
+    @apply text-[#e9e5e5];
+  }
+
+  main .about-wrapper .education li h3::before {
+    @apply text-[#e9e5e5];
+  }
+
+  #services .card-wrapper .card:hover .card-head i {
+    @apply text-text dark:text-base-100;
+  }
+
+  #services .card-wrapper .card .card-body h3 {
+    @apply text-xl font-bold;
+  }
+
+  #projects .card .card-head .img {
+    @apply dark:shadow-[0_0_10px_#00cdb8];
+  }
+
+  #projects .popup-img img {
+    @apply w-[80%] md:w-[60%];
+  }
+
+  #skills .card-wrapper .card .img {
+    @apply max-w-[150px] md:max-w-[200px];
+  }
+}
