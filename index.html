@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
         <link href="./dist/output.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/style.css">
         <script defer
@@ -17,6 +18,7 @@
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
             </script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -102,7 +104,8 @@
             <section id="home">
                 <div
                     class="container flex flex-col-reverse lg:flex-row mx-auto ">
-                    <div class="left pt-10 lg:pt-0">
+                    <div class="left pt-10 lg:pt-0" data-aos="fade-right"
+                        data-aos-duration="1000">
                         <h2 class="title mb-2">My name is</h2>
                         <h1 class="text-3xl lg:text-4xl font-bold">Mhd.
                             <span class="text-primary">Ega</span>
@@ -134,7 +137,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right">
+                    <div class="right" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <div class="img">
                             <img src="assets/images/profile.png" alt="Profile">
                         </div>
@@ -143,11 +147,12 @@
             </section>
             <section id="about">
                 <div class="container">
-                    <div class="section-hero">
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        class="section-hero">
                         <h2 class="title">Know About Me</h2>
                         <h1>Education & Introduction</h1>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="about-wrapper mt-5 flex flex-col-reverse md:flex-row justify-around items-center gap-5">
                         <div class="education w-full md:w-[40%]">
                             <ul>
@@ -190,12 +195,13 @@
                 </div>
             </section>
             <section id="services">
-                <div class="container">
+                <div data-aos="fade-up" data-aos-duration="1000"
+                    class="container">
                     <div class="section-hero">
                         <h2 class="title">My Services</h2>
                         <h1>What I Offer</h1>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="card-wrapper mt-10 flex flex-col md:flex-row gap-5 flex-wrap items-center md:items-start justify-center">
                         <div class="card">
                             <div class="card-head">
@@ -246,12 +252,14 @@
                 </div>
             </section>
             <section id="projects">
-                <div class="container">
+                <div data-aos="fade-up" data-aos-duration="1000"
+                    class="container">
                     <div class="section-hero">
                         <h2 class="title">Projects</h2>
                         <h1>My Recent Work</h1>
                     </div>
-                    <div x-data="{data:$store.data, popupImage:false, popupImageSrc:null}"
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        x-data="{data:$store.data, popupImage:false, popupImageSrc:null}"
                         x-init="$store.data.projectsFetch()" class="card-wrapper mt-10 flex flex-col md:flex-row
                         gap-5 flex-wrap items-center md:items-start
                         justify-center">
@@ -299,12 +307,14 @@
             </section>
             <section id="skills">
                 <div class="container">
-                    <div class="section-hero">
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        class="section-hero">
                         <h2 class="title">Skills</h2>
                         <h1>My Expertise</h1>
                     </div>
 
-                    <div class="card-wrapper">
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        class="card-wrapper">
                         <div class="card">
                             <div class="img">
                                 <img src="assets/images/logo/HTML5.png" alt="">
@@ -357,11 +367,12 @@
             </section>
             <section id="contact">
                 <div class="container">
-                    <div class="section-hero">
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                        class="section-hero">
                         <h2 class="title">Contact</h2>
                         <h1>Get in Touch with Me</h1>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="contact-wrapper flex-col md:flex-row p-5 md:p-10">
                         <div class="contact-form  w-full md:w-[60%]">
                             <form class="flex flex-col w-full gap-3">
@@ -450,6 +461,10 @@
             </footer>
         </main>
         <script src="assets/js/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
